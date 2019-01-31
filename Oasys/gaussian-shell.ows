@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="MOI-paper" version="2.0" working_directory="/users/srio/OASYS1.1d/gaussian-shell/Oasys" workspace_units="0">
+	<nodes>
+		<node id="0" name="Generic Wavefront 1D" position="(154.0, 151.0)" project_name="OASYS1-WOFRY" qualified_name="orangecontrib.wofry.widgets.wavefront_propagation.ow_generic_wavefront_1D.OWGenericWavefront1D" title="Generic Wavefront 1D" version="" />
+		<node id="1" name="Screen 1D" position="(326.0, 143.0)" project_name="OASYS1-WOFRY" qualified_name="orangecontrib.wofry.widgets.beamline_elements.ow_screen_1d.OWWOScreen1D" title="Screen 1D" version="" />
+		<node id="2" name="Screen 1D" position="(455.0, 132.0)" project_name="OASYS1-WOFRY" qualified_name="orangecontrib.wofry.widgets.beamline_elements.ow_screen_1d.OWWOScreen1D" title="Screen 1D (1)" version="" />
+		<node id="3" name=" Generic Wavefront Viewer 1D" position="(476.0, 307.0)" project_name="OASYS1-WOFRY" qualified_name="orangecontrib.wofry.widgets.tools.generic_wavefront_viewer_1D.GenericWavefrontViewer1D" title=" Generic Wavefront Viewer 1D" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="GenericWavefront1D" sink_node_id="1" source_channel="GenericWavefront1D" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="GenericWavefront1D" sink_node_id="2" source_channel="GenericWavefront1D" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="GenericWavefront1D" sink_node_id="3" source_channel="GenericWavefront1D" source_node_id="1" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWBAAAABhZGRfcmFuZG9tX3BoYXNlcQFLAFgJAAAAYW1wbGl0dWRlcQJHP/AAAAAAAABY
+BgAAAGNlbnRlcnEDRwAAAAAAAAAAWBQAAABjb21wbGV4X2FtcGxpdHVkZV9pbXEERwAAAAAAAAAA
+WBQAAABjb21wbGV4X2FtcGxpdHVkZV9yZXEFRz/wAAAAAAAAWAYAAABlbmVyZ3lxBkdAj0AAAAAA
+AFgSAAAAZ2F1c3NpYW5fYW1wbGl0dWRlcQdHP8HrhR64UexYDQAAAGdhdXNzaWFuX21vZGVxCEsC
+WA4AAABnYXVzc2lhbl9zaGlmdHEJRwAAAAAAAAAAWA4AAABnYXVzc2lhbl9zaWdtYXEKRz8Y51eS
+jgyeWAsAAABpbmNsaW5hdGlvbnELRwAAAAAAAAAAWBQAAABpbml0aWFsaXplX2FtcGxpdHVkZXEM
+SwBYDwAAAGluaXRpYWxpemVfZnJvbXENSwBYFgAAAGlzX2F1dG9tYXRpY19leGVjdXRpb25xDolY
+DAAAAGtpbmRfb2Zfd2F2ZXEPSwNYEAAAAG51bWJlcl9vZl9wb2ludHNxEE3oA1gFAAAAcGhhc2Vx
+EUcAAAAAAAAAAFgGAAAAcmFkaXVzcRJHQGGAAAAAAABYCgAAAHJhbmdlX2Zyb21xE0e/Kjbi6xxD
+LVgIAAAAcmFuZ2VfdG9xFEc/Kjbi6xxDLVgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEVY3NpcApf
+dW5waWNrbGVfdHlwZQpxFlgMAAAAUHlRdDUuUXRDb3JlcRdYCgAAAFFCeXRlQXJyYXlxGEMyAdnQ
+ywACAAAAAAF8AAAA4gAABqMAAAO+AAABfAAAAP4AAAajAAADvgAAAAAAAAAABpBxGYVxGodxG1Jx
+HFgLAAAAc3RlcHNfc3RhcnRxHUe/QGJN0vGp/FgKAAAAc3RlcHNfc3RlcHEeRz6wxvegte2NWAUA
+AAB1bml0c3EfSwFYCQAAAHZpZXdfdHlwZXEgSwFYCgAAAHdhdmVsZW5ndGhxIUc+IS4L6CbWlXUu
+</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWA8AAABhbmdsZV9hemltdXRoYWxxAUcAAAAAAAAAAFgMAAAAYW5nbGVfcmFkaWFscQJH
+AAAAAAAAAABYFgAAAGlzX2F1dG9tYXRpY19leGVjdXRpb25xA4hYDwAAAG1hZ25pZmljYXRpb25f
+TnEERz/wAAAAAAAAWA8AAABtYWduaWZpY2F0aW9uX3hxBUdASQAAAAAAAFgHAAAAb2VfbmFtZXEG
+WAAAAABxB1gBAAAAcHEIRwAAAAAAAAAAWAoAAABwcm9wYWdhdG9ycQlLA1gBAAAAcXEKR0BdgAAA
+AAAAWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQtjc2lwCl91bnBpY2tsZV90eXBlCnEMWAwAAABQ
+eVF0NS5RdENvcmVxDVgKAAAAUUJ5dGVBcnJheXEOQzIB2dDLAAIAAAAAAJYAAABKAAAFvQAAAyYA
+AACWAAAAZgAABb0AAAMmAAAAAAAAAAAGkHEPhXEQh3ERUnESWAgAAABzY2FsZWRfTnETS2RYCAAA
+AHNjYWxlZF9ScRRHQI9AAAAAAABYCwAAAHNjYWxlZF9SbWF4cRVHQFkAAAAAAABYDgAAAHNjYWxl
+ZF9ndWVzc19ScRaIWAUAAABzaGFwZXEXSwBYDQAAAHN1cmZhY2Vfc2hhcGVxGEsAWAkAAAB2aWV3
+X3R5cGVxGUsBdS4=
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWA8AAABhbmdsZV9hemltdXRoYWxxAUcAAAAAAAAAAFgMAAAAYW5nbGVfcmFkaWFscQJH
+AAAAAAAAAABYFgAAAGlzX2F1dG9tYXRpY19leGVjdXRpb25xA4hYDwAAAG1hZ25pZmljYXRpb25f
+TnEERz/wAAAAAAAAWA8AAABtYWduaWZpY2F0aW9uX3hxBUc/4AAAAAAAAFgHAAAAb2VfbmFtZXEG
+WAAAAABxB1gBAAAAcHEIRwAAAAAAAAAAWAoAAABwcm9wYWdhdG9ycQlLAFgBAAAAcXEKR0BZAAAA
+AAAAWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQtjc2lwCl91bnBpY2tsZV90eXBlCnEMWAwAAABQ
+eVF0NS5RdENvcmVxDVgKAAAAUUJ5dGVBcnJheXEOQzIB2dDLAAIAAAAAANIAAAEyAAAF+QAABA4A
+AADSAAABTgAABfkAAAQOAAAAAAAAAAAGkHEPhXEQh3ERUnESWAgAAABzY2FsZWRfTnETS2RYCAAA
+AHNjYWxlZF9ScRRHQI9AAAAAAABYCwAAAHNjYWxlZF9SbWF4cRVHQFkAAAAAAABYDgAAAHNjYWxl
+ZF9ndWVzc19ScRaIWAUAAABzaGFwZXEXSwBYDQAAAHN1cmZhY2Vfc2hhcGVxGEsAWAkAAAB2aWV3
+X3R5cGVxGUsBdS4=
+</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWBYAAABpc19hdXRvbWF0aWNfZXhlY3V0aW9ucQGJWAsAAABrZWVwX3Jlc3VsdHECSwFY
+DAAAAHBoYXNlX3Vud3JhcHEDSwFYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxBGNzaXAKX3VucGlj
+a2xlX3R5cGUKcQVYDAAAAFB5UXQ1LlF0Q29yZXEGWAoAAABRQnl0ZUFycmF5cQdDMgHZ0MsAAgAA
+AAAHmAAAAR4AAAy/AAAD+gAAB5gAAAE6AAAMvwAAA/oAAAABAAAAAAaQcQiFcQmHcQpScQtYCQAA
+AHZpZXdfdHlwZXEMSwF1Lg==
+</properties>
+	</node_properties>
+</scheme>
