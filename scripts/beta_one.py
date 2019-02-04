@@ -62,7 +62,7 @@ sigma = 100e-6
 wavelength = 2e-9
 
 gs = GaussianSchellModel1D(1.0,sigma,sigma)
-x = numpy.linspace(-600e-6,600e-6,200)
+x = numpy.linspace(-600e-6,600e-6,600)
 
 
 print("eigenvalues",gs.beta(0),gs.beta(1),gs.beta(2))
@@ -74,9 +74,10 @@ sdensity += gs.beta(1) * gs.phi(1, x) ** 2
 sdensity += gs.beta(2) * gs.phi(2, x) ** 2
 
 
-SIGMA = source_fwhm_intensity / 2.35
+SIGMA = 67e-6 # source_fwhm_intensity / 2.355
 SIGMAP = wavelength / 4 / numpy.pi / SIGMA
 print("0th MODE SIGMA, SIGMAP, FWHM [um]= ",1e6*SIGMA,1e6*SIGMAP,1e6*2.35*SIGMA)
+print("propagated FWHM at 0 m= %f um"%(SIGMA*2.355))
 print("propagated FWHM at 118 m= %f um"%(get_fwhm(1e6*x/SIGMA*SIGMAP*118.0,sdensity)))
 print("propagated FWHM at 218 m= %f um"%(get_fwhm(1e6*x/SIGMA*SIGMAP*218.0,sdensity)))
 
