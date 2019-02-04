@@ -77,11 +77,16 @@ sdensity += gs.beta(2) * gs.phi(2, x) ** 2
 SIGMA = 67e-6 # source_fwhm_intensity / 2.355
 SIGMAP = wavelength / 4 / numpy.pi / SIGMA
 print("0th MODE SIGMA, SIGMAP, FWHM [um]= ",1e6*SIGMA,1e6*SIGMAP,1e6*2.35*SIGMA)
-print("propagated FWHM at 0 m= %f um"%(SIGMA*2.355))
+print("propagated 0th mode FWHM at 0 m= %f um"%(1e6*SIGMA*2.355))
+print("propagated 0th mode FWHM at 118 m= %f um"%(SIGMAP*2.355*118.0*1e6))
+print("propagated 0th mode FWHM at 218 m= %f um"%(SIGMAP*2.355*218.0*1e6))
+
+
+print("propagated FWHM at 0 m= %f um"%(get_fwhm(1e6*x,sdensity)))
 print("propagated FWHM at 118 m= %f um"%(get_fwhm(1e6*x/SIGMA*SIGMAP*118.0,sdensity)))
 print("propagated FWHM at 218 m= %f um"%(get_fwhm(1e6*x/SIGMA*SIGMAP*218.0,sdensity)))
 
-plot(x*1e6,sdensity,
+plot(1e6 * x,sdensity,
      1e6 * x / SIGMA * SIGMAP * 118.0,sdensity,
      1e6 * x / SIGMA * SIGMAP * 218.0,sdensity,
      legend=["source FWHM=%d um"%(get_fwhm(x*1e6,sdensity)),
